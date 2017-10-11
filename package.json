@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack/debug.config.js",
+    "build": "webpack --config webpack/build.config.js",
     "start": "webpack-dev-server --config webpack/debug.config.js --hot --inline",
     "compile": "babel src --out-dir lib --copy-files"
   },

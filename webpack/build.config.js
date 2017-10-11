@@ -6,7 +6,7 @@ const pkg = require('../package.json');
 
 module.exports = {
     entry: {
-        index: path.join(__dirname, '../src', 'index.js')
+        index: path.join(__dirname, '../develop', 'index.js')
     },
 
     output: {
@@ -50,7 +50,9 @@ module.exports = {
             compress: { warnings: false },
             comments: false
         }),
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, '../develop', 'index.ejs')
+        }),
         new webpack.BannerPlugin(`${pkg.name}-${new Date()}. RELEASE.`),
         new webpack.DefinePlugin({
             'process.env': {
