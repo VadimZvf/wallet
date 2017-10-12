@@ -11,8 +11,11 @@ export const actions = {
     [INIT]: state => nextState(state, { isReady: true })
 };
 
-const reducerKey = 'chunk-wallet';
+let reducerKey = 'chunk-wallet';
 
-export const createConnect = connect => state => connect(state[reducerKey]);
+export default function (key) {
+    reducerKey = key || reducerKey;
+    return { [reducerKey]: createReducer(initialState, actions) };
+}
 
-export default { [reducerKey]: createReducer(initialState, actions) };
+export const createConnect = connect => state => connect(state, reducerKey);

@@ -5,6 +5,7 @@ npm-debug.log
 postcss.config.js
 src
 develop
+webpack
 .babelrc
 .editorconfig
 .eslintrc
