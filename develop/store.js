@@ -1,7 +1,7 @@
 import { applyMiddleware, createStore, compose } from 'redux';
 import thunk from 'redux-thunk';
 import reducer from './reducer';
-import { identity } from '../utilities';
+import { identity } from '../src/utilities';
 
 let devTools = identity;
 
