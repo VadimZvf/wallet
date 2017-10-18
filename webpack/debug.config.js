@@ -32,9 +32,9 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             sourceMap: true,
-                            modules: true,
+                            // modules: true,
                             minimize: false,
-                            localIdentName: '[folder]__[name]__[local]--[hash:base64:5]'
+                            // localIdentName: '[folder]__[name]__[local]--[hash:base64:5]'
                         },
                     },
                     'postcss-loader'

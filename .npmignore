@@ -6,6 +6,8 @@ postcss.config.js
 src
 develop
 webpack
+src/config
+develop/config
 .babelrc
 .editorconfig
 .eslintrc
