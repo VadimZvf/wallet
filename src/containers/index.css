@@ -1,0 +1,28 @@
+.title {
+    &__total {
+        display: inline-block;
+    }
+
+    &__day {
+        margin-left: 0.5rem;
+        color: #52c41a;
+
+        &--over {
+            color: #f5222d;
+        }
+    }
+}
+
+.actions {
+    margin-top: 20px;
+
+    &__item {
+        & + & {
+            margin-left: 10px;
+        }
+    }
+}
+
+.history {
+    margin-top: 60px;
+}
